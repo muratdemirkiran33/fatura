@@ -1,0 +1,209 @@
+@font-face {
+    font-family: helvetica;
+    src: url(Helvetica.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+    border-spacing: 0;
+}
+html {
+    display: grid;
+    justify-content: center;
+    background-color: #fafafa;
+}
+
+body {
+    width: 597.6px;
+    height: 844.08px;
+    background-color: #fff;
+    position: relative;
+}
+
+#pageTopSvg,#pageBottomSvg {
+    width: 100%;
+}
+#pageBottomSvg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.pageTop {
+    margin-left: 57px;
+    margin-top: 10px;
+    display: flex;
+}
+.marka {
+    display: flex;
+    flex-direction: column;
+}
+
+.marka svg {
+    width: 126px;
+}
+.pageTop p {
+    font-size: 10px;
+}
+.pageTop .marka p {
+    margin-top: 7px;
+    font-size: 6px;
+    line-height: 1;
+    text-align: center;
+    width: 126px;
+}
+.pageTop .marka p b{
+margin-bottom:1px;
+display: block;
+}
+
+.aliciFirma {
+    color: #b8934b;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 1px;
+    font-weight: bold;
+    border-bottom: 1.5px solid #d6bd8e;
+}
+
+p.grey {
+    margin-left: 4px;
+    font-size: 9px;
+    color: #898989;
+    font-weight: bold;
+    letter-spacing: .2px;
+}
+
+.first-grey {
+    margin: 5px 0 20px 4px;
+}
+.mb2 {
+    margin-bottom: 2px;
+}
+.pageBody {
+    padding: 0 48px;
+    margin-top: 10px;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table .row {
+    font-size: 9px;
+    height: 13px;
+}
+
+.table .row .col {
+    border-right: .5px solid #727272;
+    padding: 0 4px;
+    font-weight: normal;
+    font-size: 8px;
+}
+
+
+.table .row .col:first-child {
+    text-align: right;
+    padding-right: 5px;
+    padding-left: 10px;
+    border-radius: 30px 0 0 30px;
+}
+.table .row .col:last-child {
+    text-align: left;
+    padding-left: 5px;
+    border-radius:  0 30px  30px 0;
+    border-right: 0;
+    padding-right: 10px;
+}
+
+.table .row:first-child {
+    background-color: #ba9551 !important;
+    font-size: 9px;
+    font-weight: bold;
+    color: rgb(43, 43, 42);
+    border-radius: 30px;
+}
+
+.table .row:first-child .col {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-weight: bold;
+  font-size: 9px;
+}
+
+.table .row:nth-child(odd){
+    background-color: #F2EADD;
+}
+
+.underTable{
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    margin-top: 16px;
+}
+.underTable span{
+    display: block;
+    width: 100%;
+    height: 63.5px;
+    border-radius: 20000px;
+    background-color: #F2EADD;
+
+}
+
+.underTable p{
+    font-size: 9px;
+    font-weight:  bold;
+    color: #898989;
+    display: block;
+    width: 175px;
+    margin-bottom: 6px;
+    white-space: nowrap;
+    padding-left: 20px;
+    position: relative;
+}
+
+.underTable b{
+    display: block;
+    font-size: 9px;
+width: 175px;
+margin-top: 10px;
+padding: 5px 20px;
+    white-space: nowrap;
+    color: #000000;
+    background-color: #F2EADD;
+border-radius: 999px;
+position: relative;
+    
+}
+
+.underTable b::before,
+.underTable p::before{
+    content: ":";
+    position: absolute;
+    left: 93px;
+}
+
+
+#bottomimage{
+    width: calc(100% - 55px);
+  
+
+}
+.bottomimageWrapper{
+    margin-top: 12px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ #infos{
+    position: absolute;
+    left: 85px;
+    right: 85px;
+    bottom: 10px;
+    z-index: 5;
+    width: calc(100% - 170px);
+ }
